@@ -10,7 +10,7 @@ Summary(pl):	Modu³ perla Text::BasicTemplate
 Name:		perl-Text-BasicTemplate
 Version:	2.006.1
 Release:	3
-License:	GPL
+License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	c849a595e8908ace13e2b9fc7f819036
