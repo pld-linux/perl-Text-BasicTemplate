@@ -1,12 +1,11 @@
+%include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	BasicTemplate
-%include	/usr/lib/rpm/macros.perl
 Summary:	Text-BasicTemplate perl module
 Summary(pl):	Modu³ perla Text-BasicTemplate
 Name:		perl-Text-BasicTemplate
 Version:	2.005
-Release:	4
-
+Release:	5
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.perl.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -22,7 +21,7 @@ Text-BasicTemplate - simple text/HTML/generic template parsing module.
 Modu³ perla Text-BasicTemplate.
 
 %prep
-%setup -q -n Text-BasicTemplate-%{version}
+%setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
 perl Makefile.PL
