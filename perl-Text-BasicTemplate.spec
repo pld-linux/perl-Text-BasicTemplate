@@ -1,3 +1,7 @@
+#
+# Conditional build:
+# _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	BasicTemplate
@@ -5,7 +9,7 @@ Summary:	Text::BasicTemplate perl module
 Summary(pl):	Modu³ perla Text::BasicTemplate
 Name:		perl-Text-BasicTemplate
 Version:	2.006.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
@@ -27,6 +31,7 @@ tekstowych, HTML i ogólnych.
 %build
 perl Makefile.PL
 %{__make}
+%{!?_without_tests:%{__make} test}
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -40,5 +45,7 @@ rm -rf $RPM_BUILD_ROOT
 %defattr(644,root,root,755)
 %doc Changes README
 %{perl_sitelib}/Text/BasicTemplate.pm
-%{perl_sitelib}/auto/Text/BasicTemplate
+# empty autosplit.ix
+#%dir %{perl_sitelib}/auto/Text/BasicTemplate
+#%{perl_sitelib}/auto/Text/BasicTemplate/autosplit.ix
 %{_mandir}/man3/*
