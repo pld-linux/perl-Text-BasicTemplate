@@ -47,5 +47,5 @@ rm -rf $RPM_BUILD_ROOT
 %{perl_sitelib}/Text/BasicTemplate.pm
 # empty autosplit.ix
 #%dir %{perl_sitelib}/auto/Text/BasicTemplate
-#%{perl_sitelib}/auto/Text/BasicTemplate/autosplit.ix
+#%%{perl_sitelib}/auto/Text/BasicTemplate/autosplit.ix
 %{_mandir}/man3/*
