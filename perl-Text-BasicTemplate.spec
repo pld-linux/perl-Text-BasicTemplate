@@ -4,8 +4,8 @@
 Summary:	Text::BasicTemplate perl module
 Summary(pl):	Modu³ perla Text::BasicTemplate
 Name:		perl-Text-BasicTemplate
-Version:	2.005
-Release:	5
+Version:	2.006.1
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	ftp://ftp.cpan.org/pub/CPAN/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
