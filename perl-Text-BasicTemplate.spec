@@ -1,8 +1,8 @@
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Text
 %define	pnam	BasicTemplate
-Summary:	Text-BasicTemplate perl module
-Summary(pl):	Modu³ perla Text-BasicTemplate
+Summary:	Text::BasicTemplate perl module
+Summary(pl):	Modu³ perla Text::BasicTemplate
 Name:		perl-Text-BasicTemplate
 Version:	2.005
 Release:	5
@@ -15,10 +15,10 @@ BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Text-BasicTemplate - simple text/HTML/generic template parsing module.
+Text::BasicTemplate - simple text/HTML/generic template parsing module.
 
 %description -l pl
-Modu³ perla Text-BasicTemplate.
+Modu³ perla Text::BasicTemplate.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
