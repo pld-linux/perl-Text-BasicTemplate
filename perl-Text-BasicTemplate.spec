@@ -2,8 +2,8 @@
 Summary:	Text-BasicTemplate perl module
 Summary(pl):	Modu³ perla Text-BasicTemplate
 Name:		perl-Text-BasicTemplate
-Version:	0.9.8
-Release:	2
+Version:	2.004
+Release:	1
 License:	GPL
 Group:		Development/Languages/Perl
 Group(de):	Entwicklung/Sprachen/Perl
