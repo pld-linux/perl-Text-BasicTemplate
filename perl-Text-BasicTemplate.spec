@@ -9,12 +9,12 @@ Summary:	Text::BasicTemplate perl module
 Summary(pl):	Modu³ perla Text::BasicTemplate
 Name:		perl-Text-BasicTemplate
 Version:	2.006.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 BuildRequires:	perl >= 5.6
-BuildRequires:	rpm-perlprov >= 3.0.3-16
+BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
@@ -29,7 +29,8 @@ tekstowych, HTML i ogólnych.
 %setup -q -n %{pdir}-%{pnam}-%{version}
 
 %build
-%{__perl} Makefile.PL
+%{__perl} Makefile.PL \
+	INSTALLDIRS=vendor 
 %{__make}
 %{!?_without_tests:%{__make} test}
 
@@ -44,8 +45,8 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Changes README
-%{perl_sitelib}/Text/BasicTemplate.pm
+%{perl_vendorlib}/Text/BasicTemplate.pm
 # empty autosplit.ix
-#%dir %{perl_sitelib}/auto/Text/BasicTemplate
-#%%{perl_sitelib}/auto/Text/BasicTemplate/autosplit.ix
+#%dir %{perl_vendorlib}/auto/Text/BasicTemplate
+#%%{perl_vendorlib}/auto/Text/BasicTemplate/autosplit.ix
 %{_mandir}/man3/*
