@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define	pdir	Text
-%define	pnam	BasicTemplate
+%define		pdir	Text
+%define		pnam	BasicTemplate
 Summary:	Text::BasicTemplate perl module
 Summary(pl):	Modu³ perla Text::BasicTemplate
 Name:		perl-Text-BasicTemplate
