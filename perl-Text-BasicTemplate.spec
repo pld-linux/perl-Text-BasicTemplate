@@ -6,7 +6,7 @@
 %define		pdir	Text
 %define		pnam	BasicTemplate
 Summary:	Text::BasicTemplate perl module
-Summary(pl):	Modu≥ perla Text::BasicTemplate
+Summary(pl.UTF-8):   Modu≈Ç perla Text::BasicTemplate
 Name:		perl-Text-BasicTemplate
 Version:	2.006.1
 Release:	4
@@ -22,9 +22,9 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 Text::BasicTemplate - simple text/HTML/generic template parsing module.
 
-%description -l pl
-Modu≥ perla Text::BasicTemplate - prosty modu≥ do analizowania wzorcÛw
-tekstowych, HTML i ogÛlnych.
+%description -l pl.UTF-8
+Modu≈Ç perla Text::BasicTemplate - prosty modu≈Ç do analizowania wzorc√≥w
+tekstowych, HTML i og√≥lnych.
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}
