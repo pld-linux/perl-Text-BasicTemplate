@@ -6,7 +6,7 @@
 %define		pdir	Text
 %define		pnam	BasicTemplate
 Summary:	Text::BasicTemplate perl module
-Summary(pl.UTF-8):   Moduł perla Text::BasicTemplate
+Summary(pl.UTF-8):	Moduł perla Text::BasicTemplate
 Name:		perl-Text-BasicTemplate
 Version:	2.006.1
 Release:	4
