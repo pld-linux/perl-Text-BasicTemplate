@@ -9,7 +9,7 @@ Summary:	Text::BasicTemplate perl module
 Summary(pl.UTF-8):	Moduł perla Text::BasicTemplate
 Name:		perl-Text-BasicTemplate
 Version:	2.006.1
-Release:	4
+Release:	5
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
