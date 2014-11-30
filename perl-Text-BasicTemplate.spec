@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	Text
 %define		pnam	BasicTemplate
+%include	/usr/lib/rpm/macros.perl
 Summary:	Text::BasicTemplate perl module
 Summary(pl.UTF-8):	Moduł perla Text::BasicTemplate
 Name:		perl-Text-BasicTemplate
@@ -14,13 +14,15 @@ License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	c849a595e8908ace13e2b9fc7f819036
+URL:		http://search.cpan.org/dist/Text-BasicTemplate/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
-Text::BasicTemplate - simple text/HTML/generic template parsing module.
+Text::BasicTemplate - simple text/HTML/generic template parsing
+module.
 
 %description -l pl.UTF-8
 Moduł perla Text::BasicTemplate - prosty moduł do analizowania wzorców
