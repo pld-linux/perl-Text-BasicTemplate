@@ -4,7 +4,6 @@
 
 %define		pdir	Text
 %define		pnam	BasicTemplate
-%include	/usr/lib/rpm/macros.perl
 Summary:	Text::BasicTemplate perl module
 Summary(pl.UTF-8):	Moduł perla Text::BasicTemplate
 Name:		perl-Text-BasicTemplate
